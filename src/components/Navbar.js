@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useNavigate, redirect } from "react-router-dom";
 
-// Jot notes - Link vs useNavigate() which can hide URL when hovering
+// Jot notes - Link vs useNavigate() which can hide URL on hover
 // const temp = (
 //   <div className="nav">
 //     <Link to="/" style={{textDecoration: "none"}}>
