@@ -25,8 +25,9 @@ function Navbar() {
   let navigate = useNavigate();
 
   function handleClick(props) {
+    const preffix_github_page = "/portfolio_website"
     const id = props.target.id
-    navigate(`/${id}`)
+    navigate(`${preffix_github_page}/${id}`)
   }
 
   return (
