@@ -50,8 +50,8 @@ function Project() {
         <div className="project--titlebox">
           <p className="project--title">Search:</p>
         </div>
-        <div>
-          <input className="project--searchbox" type="search" placeholder="Type something here to filter projects ..."></input>
+        <div className="project--searchbox">
+          <input className="project--searchbar" type="search" placeholder="Type something here to filter projects ..."></input>
         </div>
       </div>      
       <br />

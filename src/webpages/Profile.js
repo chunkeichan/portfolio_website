@@ -29,7 +29,9 @@ function Profile() {
   return (
     <div className="profilepage">
       <div className="profile">
-        <img className="profile--pic" src={profile_pic}></img>
+        <div className="profile--picbox">
+          <img className="profile--pic" src={profile_pic}></img>
+        </div>
         <div className="profile--passages">
           <p>Several years of experience in programming & project management. Currently working as a developer role on projects ranging from backend to data analytics.</p>
           <br/>
