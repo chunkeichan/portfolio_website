@@ -185,11 +185,16 @@ code {
 }
 
 .cover {
-  margin-top: 22%;
+  padding-top: 22%;
   text-align: center;
   /* background-color: black;
   color: white; */
   color: black;
+
+  position: absolute;
+  top: 50px;
+  bottom: 0px;
+  width: 100%;
 }
 
 .contact--method {

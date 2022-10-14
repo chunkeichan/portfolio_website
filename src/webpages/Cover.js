@@ -11,6 +11,12 @@ function Cover() {
         <p>Data Engineer. Backend Developer. Project Manager.</p>
       </div>
     </Link>
+    // <div className="cover">
+    //   <Link to={`${preffix_github_page}/profile`} style={{textDecoration: "none"}}>
+    //     <h1>Chan Chun Kei</h1>
+    //     <p>Data Engineer. Backend Developer. Project Manager.</p>
+    //   </Link>
+    // </div>
   )
 }
 

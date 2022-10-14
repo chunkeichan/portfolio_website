@@ -1,30 +1,37 @@
-import React from "react";
-import achievementDetails from './data/achievementDetails'
+import React, { useEffect } from "react";
+import achievementDetails from './data/achievementDetails';
+import Aos from 'aos';
+import "aos/dist/aos.css"
 
 function Profile() {
   // const profile_pic = '../images/DSCF9931_adjusted_9.jpg'
   const profile_pic = 'https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp'
   const achievements = achievementDetails.map((achievement, index) => {
     const achievement_year = (<p className="profile--achievement--year">{achievement.year}</p>)
+
+    const onLeftSide = (index%2 === 0)
     const achievement_content = achievement.content.map(content => (
-        <p className="profile--achievement--content">•{content}</p>
+        <p className="profile--achievement--content" data-aos={onLeftSide ? "fade-left" : "fade-right"}>•{content}</p>
     ))
 
     return (
       <div>
       <div style={{display: "flex", alignItems: "center"}}>
         <div style={{width: "50%", textAlign: "center"}}>
-          {index%2 === 0 ? achievement_year : achievement_content}
+          {onLeftSide ? achievement_year : achievement_content}
         </div>
         <div className="profile--achievement--line" style={{alignSelf: "center"}}></div>
         <div style={{width: "50%", textAlign: "center"}}>
-          {index%2 === 0 ? achievement_content : achievement_year}
+          {onLeftSide ? achievement_content : achievement_year}
         </div>
       </div>
     </div>
     )
-  }
-)
+  })
+
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, [])
   
   return (
     <div className="profilepage">
