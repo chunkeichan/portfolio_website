@@ -29,13 +29,9 @@ function Profile() {
     )
   })
 
-  useEffect(() => {
-    Aos.init({duration: 2000});
-  }, [])
-  
   return (
     <div className="profilepage">
-      <div className="profile">
+      <div className="profile" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div className="profile--picbox">
           <img className="profile--pic" src={profile_pic}></img>
         </div>

@@ -6,12 +6,12 @@ function Cover() {
   return (
     // Review textDecoration
     <Link to={`${preffix_github_page}/profile`} style={{textDecoration: "none"}}>
-      <div className="cover">
+      <div className="cover" data-aos="fade-up" data-aos-anchor-placement="top-center">
         <h1>Chan Chun Kei</h1>
         <p>Data Engineer. Backend Developer. Project Manager.</p>
       </div>
     </Link>
-    // <div className="cover">
+    // <div className="cover" data-aos="fade-up" data-aos-anchor-placement="top-center">
     //   <Link to={`${preffix_github_page}/profile`} style={{textDecoration: "none"}}>
     //     <h1>Chan Chun Kei</h1>
     //     <p>Data Engineer. Backend Developer. Project Manager.</p>

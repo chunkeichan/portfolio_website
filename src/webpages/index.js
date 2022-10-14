@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,6 +6,8 @@ import {
   Route,
   Link
 } from "react-router-dom"
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 import Layout from "../components/Layout";
 
@@ -16,6 +18,11 @@ import Project from './Project';
 
 function Webpages() {
   const preffix_github_page = "/portfolio_website"
+
+  useEffect(() => {
+    Aos.init({duration: 1500});
+  }, [])
+  
   return (
     <Router>
       <Layout>

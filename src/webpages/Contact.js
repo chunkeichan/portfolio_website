@@ -3,7 +3,7 @@ import React from "react";
 function Contact() {
   const profile_pic = "../images/DSCF9931_adjusted_9.jpg"
   return (
-    <div className="contact">
+    <div className="contact" data-aos="fade-up" data-aos-anchor-placement="top-center">
     {/* <img className="contact--pic" src={profile_pic}></img> */}
     <img className="contact--pic" src="https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp"></img>
     
