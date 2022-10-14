@@ -5,7 +5,7 @@ function Contact() {
   return (
     <div className="contact">
     {/* <img className="contact--pic" src={profile_pic}></img> */}
-    <img className="contact--pic" src="https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.jpg"></img>
+    <img className="contact--pic" src="https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp"></img>
     
     <div>
       <div className="contact--method">

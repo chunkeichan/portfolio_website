@@ -3,7 +3,7 @@ import achievementDetails from './data/achievementDetails'
 
 function Profile() {
   // const profile_pic = '../images/DSCF9931_adjusted_9.jpg'
-  const profile_pic = 'https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.jpg'
+  const profile_pic = 'https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp'
   const achievements = achievementDetails.map((achievement, index) => {
     const achievement_year = (<p className="profile--achievement--year">{achievement.year}</p>)
     const achievement_content = achievement.content.map(content => (
