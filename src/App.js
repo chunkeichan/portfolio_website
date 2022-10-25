@@ -5,7 +5,7 @@ import Cover from './webpages/Cover';
 import Contact from './webpages/Contact';
 import Project from './webpages/Project';
 import Webpages from './webpages';
-import { MobileView, isMobile } from 'react-device-detect';
+import { BrowserView, MobileView, isMobile } from 'react-device-detect';
 
 function App() {
   const [windowDimension, setWindowDimension] = useState(window.innerWidth)
@@ -23,12 +23,17 @@ function App() {
 
   return (
     <div>
-      {isMobile ? (
-        <div>This is a page with a window inner width of {window.innerWidth} which is smaller than 700.</div>
-        ) : (
-          <Webpages />
-        )}
+      <MobileView>Mobile view</MobileView>
+      <BrowserView><Webpages /></BrowserView>
     </div>
+
+  // <div>
+  // {isMobile ? (
+  //   <div>This is a page with a window inner width of {window.innerWidth} which is smaller than 700.</div>
+  //   ) : (
+  //     <Webpages />
+  //   )}
+  // </div>
   );
 }
 
