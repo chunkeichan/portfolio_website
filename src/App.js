@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div>
-      <MobileView>Mobile view</MobileView>
+      <MobileView>Mobile View<Webpages /></MobileView>
       <BrowserView><Webpages /></BrowserView>
     </div>
 
