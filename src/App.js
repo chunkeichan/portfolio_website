@@ -23,8 +23,8 @@ function App() {
 
   return (
     <div>
-      <MobileView>Mobile View<Webpages /></MobileView>
-      <BrowserView><Webpages /></BrowserView>
+      <MobileView>Mobile View<Webpages isMobile={true} /></MobileView>
+      <BrowserView><Webpages isMobile={false} /></BrowserView>
     </div>
 
   // <div>

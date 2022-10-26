@@ -16,7 +16,8 @@ import Cover from './Cover';
 import Contact from './Contact';
 import Project from './Project';
 
-function Webpages() {
+function Webpages(props) {
+  const isMobile = props.isMobile
   const preffix_github_page = "/portfolio_website"
 
   useEffect(() => {
@@ -27,10 +28,10 @@ function Webpages() {
     <Router>
       <Layout>
         <Routes>
-          <Route exact path={`${preffix_github_page}/`} element={<Cover />} />
-          <Route path={`${preffix_github_page}/profile`} element={<Profile />} />
-          <Route path={`${preffix_github_page}/contact`} element={<Contact />} />
-          <Route path={`${preffix_github_page}/project`} element={<Project />} />
+          <Route exact path={`${preffix_github_page}/`} element={<Cover isMobile={isMobile} />} />
+          <Route path={`${preffix_github_page}/profile`} element={<Profile isMobile={isMobile} />} />
+          <Route path={`${preffix_github_page}/contact`} element={<Contact isMobile={isMobile} />} />
+          <Route path={`${preffix_github_page}/project`} element={<Project isMobile={isMobile} />} />
         </Routes>
       </Layout>
     </Router>

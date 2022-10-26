@@ -1,7 +1,8 @@
 import React from "react";
 import projectDetails from "./data/projectDetails"
 
-function Project() {
+function Project(props) {
+  const isMobile = props.isMobile
   const category_list = ["Data", "Project Management", "Backend", "All"]
   const items_category = category_list.map(category => (
     <button className="project--button">{category}</button>
