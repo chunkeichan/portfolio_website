@@ -285,12 +285,23 @@ code {
 
 .mobile--project {
   margin: 5% 0;
-  padding: 15px 0;
+  padding: 15px 90;
 }
 
 .project--category,
 .project--elements,
 .project--search {
+  display: flex;
+  align-items: center;
+
+  padding: 14px 0;
+
+  gap: 45px;
+}
+
+.mobile--project--category,
+.mobile--project--elements,
+.mobile--project--search {
   display: flex;
   align-items: center;
 
@@ -308,6 +319,14 @@ code {
   text-align: right;
 
   width: 100%;
+}
+
+.mobile--project--title {
+  text-align: right;
+
+  width: 100%;
+
+  font-size: 36px;
 }
 
 .project--titlebox {

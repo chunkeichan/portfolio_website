@@ -35,25 +35,25 @@ function Project(props) {
 
   return (
     <div className={checkIsMobile("project")}>
-      <div className="project--category">
+      <div className={checkIsMobile("project--category")}>
         <div className="project--titlebox">
-          <p className="project--title">Category:</p>
+          <p className={checkIsMobile("project--title")}>Category:</p>
         </div>
         <div className="project--buttonbox">
           {items_category}
         </div>
       </div>
-      <div className="project--elements">
+      <div className={checkIsMobile("project--elements")}>
         <div className="project--titlebox">
-          <p className="project--title">Element(s):</p>
+          <p className={checkIsMobile("project--title")}>Element(s):</p>
         </div>
         <div className="project--buttonbox">
           {items_element}
         </div>
       </div>
-      <div className="project--search">
+      <div className={checkIsMobile("project--search")}>
         <div className="project--titlebox">
-          <p className="project--title">Search:</p>
+          <p className={checkIsMobile("project--title")}>Search:</p>
         </div>
         <div className="project--searchbox">
           <input className="project--searchbar" type="search" placeholder="Type something here to filter projects ..."></input>
