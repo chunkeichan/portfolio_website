@@ -47,7 +47,7 @@ code {
   /* flex-direction: row; */
   display: flex;
 
-  height: 100px;
+  height: 160px;
   padding: 0 45px;
   /* width: 1440px; */
   /* margin: 0; */
@@ -67,7 +67,8 @@ code {
 
 .mobile--nav--select {
   display: inline-flex;
-  gap: 23%;
+  width: 100%;
+  gap: 30%;
 
   /* margin-right: 0%;
   margin-left: auto; */
