@@ -118,6 +118,12 @@ code {
   width: 60%;
 }
 
+.mobile--profile--passages {
+  width: 60%;
+  padding-bottom: 15%;
+  padding-top: 25%;
+}
+
 .profile--halfcirclecontainer {
   height: 82.5px;
   display: flex;
