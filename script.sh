@@ -1,6 +1,6 @@
 git add .
 git status
-read comment
+read -p 'Comment: ' comment
 git commit -m "$comment"
-# git push
-# npm run deploy
+git push
+npm run deploy
