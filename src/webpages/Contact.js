@@ -2,6 +2,10 @@ import React from "react";
 
 function Contact(props) {
   const isMobile = props.isMobile
+  function checkIsMobile(class_name) {
+    return isMobile ? `mobile--${class_name}` : `${class_name}`
+  }
+  
   const profile_pic = "../images/DSCF9931_adjusted_9.jpg"
   
   return (

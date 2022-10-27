@@ -92,6 +92,14 @@ code {
   align-items: center;
 }
 
+.mobile--profile,
+.mobile--contact {
+  display: flex;
+  flex-direction: column;
+  margin: 14% 0% 20% 0%;
+  align-items: center;
+}
+
 .profile--pic,
 .contact--pic {
   border-radius: 50%;

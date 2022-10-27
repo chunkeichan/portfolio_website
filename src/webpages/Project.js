@@ -3,6 +3,10 @@ import projectDetails from "./data/projectDetails"
 
 function Project(props) {
   const isMobile = props.isMobile
+  function checkIsMobile(class_name) {
+    return isMobile ? `mobile--${class_name}` : `${class_name}`
+  }
+  
   const category_list = ["Data", "Project Management", "Backend", "All"]
   const items_category = category_list.map(category => (
     <button className="project--button">{category}</button>

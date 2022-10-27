@@ -5,6 +5,10 @@ import "aos/dist/aos.css"
 
 function Profile(props) {
   const isMobile = props.isMobile
+  function checkIsMobile(class_name) {
+    return isMobile ? `mobile--${class_name}` : `${class_name}`
+  }
+  
   // const profile_pic = '../images/DSCF9931_adjusted_9.jpg'
   const profile_pic = 'https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp'
   const achievements = achievementDetails.map((achievement, index) => {
@@ -32,7 +36,7 @@ function Profile(props) {
 
   return (
     <div className="profilepage">
-      <div className="profile" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <div className={checkIsMobile("profile")} data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div className="profile--picbox">
           <img className="profile--pic" src={profile_pic}></img>
         </div>
