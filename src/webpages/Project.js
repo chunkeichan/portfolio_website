@@ -20,7 +20,7 @@ function Project(props) {
   const item_list = projectDetails
   const items_item = item_list.map(item => (
     <div>
-      <div className="project--item">
+      <div className={checkIsMobile("project--item")}>
         <img src={item.image}></img>
         <div>
           <h2>{item.title}</h2>
