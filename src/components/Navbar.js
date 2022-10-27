@@ -21,7 +21,13 @@ import { Link, useNavigate, redirect } from "react-router-dom";
 //   </div>
 // )
 
-function Navbar() {
+function Navbar(props) {
+  const isMobile = props.isMobile
+  function checkIsMobile(class_name) {
+    return isMobile ? `mobile--${class_name}` : `${class_name}`
+  }
+  console.log(`Navbar: ${isMobile}`)
+
   let navigate = useNavigate();
 
   function handleClick(props) {
@@ -31,12 +37,12 @@ function Navbar() {
   }
 
   return (
-    <div className="nav">
-      <p className="nav--subtitle" id="" onClick={handleClick}>Chan Chun Kei</p>
-      <div className="nav--select">
-        <button className="nav--button" id="profile" onClick={handleClick}>Profile</button>
-        <button className="nav--button" id="project" onClick={handleClick}>Projects</button>
-        <button className="nav--button" id="contact" onClick={handleClick}>Contact</button>
+    <div className={checkIsMobile("nav")}>
+      {isMobile ? "" : <p className="nav--subtitle" id="" onClick={handleClick}>Chan Chun Kei</p>}
+      <div className={checkIsMobile("nav--select")}>
+        <button className={checkIsMobile("nav--button")} id="profile" onClick={handleClick}>Profile</button>
+        <button className={checkIsMobile("nav--button")} id="project" onClick={handleClick}>Projects</button>
+        <button className={checkIsMobile("nav--button")} id="contact" onClick={handleClick}>Contact</button>
       </div>
     </div>
   )

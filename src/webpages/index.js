@@ -26,7 +26,7 @@ function Webpages(props) {
   
   return (
     <Router>
-      <Layout>
+      <Layout isMobile={isMobile}>
         <Routes>
           <Route exact path={`${preffix_github_page}/`} element={<Cover isMobile={isMobile} />} />
           <Route path={`${preffix_github_page}/profile`} element={<Profile isMobile={isMobile} />} />

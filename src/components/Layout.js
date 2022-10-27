@@ -6,10 +6,12 @@ import styled from "styled-components";
 //   background-color: black;
 // `;
 
-function Layout({children}) {
+function Layout({children, isMobile}) {
+  console.log(`Layout: ${isMobile}`)
+  
   return (
     <React.Fragment>
-      <Navbar />
+      <Navbar isMobile={isMobile} />
       <main>{children}</main>
     </React.Fragment>
   )
