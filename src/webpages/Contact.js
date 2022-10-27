@@ -5,15 +5,15 @@ function Contact(props) {
   function checkIsMobile(class_name) {
     return isMobile ? `mobile--${class_name}` : `${class_name}`
   }
-  
+
   const profile_pic = "../images/DSCF9931_adjusted_9.jpg"
   
   return (
-    <div className={isMobile?"contact":"contact"} data-aos="fade-up" data-aos-anchor-placement="top-center">
+    <div className={checkIsMobile("contact")} data-aos="fade-up" data-aos-anchor-placement="top-center">
     {/* <img className="contact--pic" src={profile_pic}></img> */}
     <img className="contact--pic" src="https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp"></img>
     
-    <div>
+    <div className={checkIsMobile("contact--methodbox")}>
       <div className="contact--method">
         {/* <img src="../images/logos_linkedin-icon.svg"></img> */}
         <img src="https://chunkeichan.github.io/portfolio_website/images/logos_linkedin-icon.svg"></img>

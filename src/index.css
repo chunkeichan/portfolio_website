@@ -274,6 +274,10 @@ code {
   gap: 68px;
 }
 
+.mobile--contact--methodbox {
+  padding: 10% 0;
+}
+
 .project {
   margin: 5% 16%;
   padding: 15px 0;
