@@ -283,6 +283,11 @@ code {
   padding: 15px 0;
 }
 
+.mobile--project {
+  margin: 5% 0;
+  padding: 15px 0;
+}
+
 .project--category,
 .project--elements,
 .project--search {

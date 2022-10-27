@@ -34,7 +34,7 @@ function Project(props) {
   ))
 
   return (
-    <div className="project">
+    <div className={checkIsMobile("project")}>
       <div className="project--category">
         <div className="project--titlebox">
           <p className="project--title">Category:</p>
