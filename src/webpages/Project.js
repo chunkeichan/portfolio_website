@@ -9,12 +9,12 @@ function Project(props) {
   
   const category_list = ["Data", "Project Management", "Backend", "All"]
   const items_category = category_list.map(category => (
-    <button className="project--button">{category}</button>
+    <button className={checkIsMobile("project--button")}>{category}</button>
   ))
 
   const element_list = ["Python", "javascript", "node.js", "express.js", "SQL", "Azure"]
   const items_element = element_list.map(element => (
-    <button className="project--button">{element}</button>
+    <button className={checkIsMobile("project--button")}>{element}</button>
   ))
   
   const item_list = projectDetails
