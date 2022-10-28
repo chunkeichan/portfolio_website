@@ -13,17 +13,17 @@ function BottomNavbar() {
   return (
     <div className="mobile--bottomnav">
       <div className="mobile--nav--select">
-        <div className="mobile--nav--buttonbox" id="profile" onClick={handleClick}>
+        <div className="mobile--nav--buttonbox">
           <img className="mobile--nav--buttonpic" src="./images/profile_icon.svg"></img>
-          <button className="mobile--nav--button">Profile</button>
+          <button className="mobile--nav--button" id="profile" onClick={handleClick}>Profile</button>
         </div>
-        <div className="mobile--nav--buttonbox" id="project" onClick={handleClick}>
+        <div className="mobile--nav--buttonbox">
           <img className="mobile--nav--buttonpic" src="./images/project_icon.svg"></img>
-          <button className="mobile--nav--button">Projects</button>
+          <button className="mobile--nav--button" id="project" onClick={handleClick}>Projects</button>
         </div>
-        <div className="mobile--nav--buttonbox" id="contact" onClick={handleClick}>
+        <div className="mobile--nav--buttonbox">
           <img className="mobile--nav--buttonpic" src="./images/contact_icon.svg"></img>
-          <button className="mobile--nav--button">Contact</button>
+          <button className="mobile--nav--button" id="contact" onClick={handleClick}>Contact</button>
         </div>
       </div>
     </div>
