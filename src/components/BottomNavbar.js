@@ -17,9 +17,9 @@ function BottomNavbar() {
           <img className="mobile--nav--buttonpic" src="./images/profile_icon.svg"></img>
           <button className="mobile--nav--button" id="profile" onClick={handleClick}>Profile</button>
         </div>
-        <div className="mobile--nav--buttonbox" onClick={handleClick}>
+        <div className="mobile--nav--buttonbox" onClick={handleClick} id="project">
           <img className="mobile--nav--buttonpic" src="./images/project_icon.svg"></img>
-          <button className="mobile--nav--button" id="project">Projects</button>
+          <button className="mobile--nav--button">Projects</button>
         </div>
         <div className="mobile--nav--buttonbox">
           <img className="mobile--nav--buttonpic" src="./images/contact_icon.svg"></img>
