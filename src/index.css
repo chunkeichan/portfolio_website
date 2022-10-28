@@ -23,11 +23,15 @@ code {
 
 main {
   width: 100%;
+  z-index: 1;
+  margin-top: 50px;
 }
 
 .mobile--main {
   position: absolute;
   width: 100%;
+
+  margin-top: 180px;
 
   z-index: 1;
 }
@@ -52,6 +56,8 @@ main {
   position: static;
   top: 0;
   width: 100%;
+
+  z-index: 2;
 }
 
 .nav--select {
@@ -104,7 +110,7 @@ main {
   width: auto;
   border-radius: 10px;
 
-  font-size: 26px;
+  font-size: 32px;
 
   cursor: pointer;
 }
@@ -117,7 +123,7 @@ main {
 }
 
 .mobile--nav--buttonpic {
-  height: 30px;
+  height: 42px;
 }
 
 .nav--subtitle {
@@ -144,6 +150,8 @@ main {
   z-index: 2;
 
   background-color: white;
+
+  font-size: 32px;
 }
 
 .mobile--bottomnav{
@@ -160,6 +168,8 @@ main {
   width: 100%;
   background-color: white;
   z-index: 2;
+
+  font-size: 32px;
 }
 
 .profilepage {
