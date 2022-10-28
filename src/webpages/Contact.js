@@ -14,7 +14,7 @@ function Contact(props) {
     <img className={checkIsMobile("contact--pic")} src="https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp"></img>
     
     <div className={checkIsMobile("contact--methodbox")}>
-      <div className="contact--method">
+      <div className={checkIsMobile("contact--method")}>
         {/* <img src="../images/logos_linkedin-icon.svg"></img> */}
         <img src="https://chunkeichan.github.io/portfolio_website/images/logos_linkedin-icon.svg"></img>
         <p>chunkeichan1901@gmail.com</p>

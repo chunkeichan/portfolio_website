@@ -22,7 +22,7 @@ code {
 }
 
 main {
-  width: 100%;
+  /* width: 100%; */
   z-index: 1;
   margin-top: 50px;
 }
@@ -338,6 +338,12 @@ main {
 }
 
 .contact--method {
+  display: flex;
+  align-items: center;
+  gap: 68px;
+}
+
+.mobile--contact--method {
   display: flex;
   align-items: center;
   gap: 68px;
