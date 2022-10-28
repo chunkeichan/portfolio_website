@@ -121,7 +121,8 @@ main {
   flex-flow: column;
   align-items: center;
   gap: 10px;
-  width: 100%;
+  /* width: 100%; */
+  width: 33%;
 }
 
 .mobile--nav--buttonpic {
