@@ -38,7 +38,7 @@ function Profile(props) {
     <div className="profilepage">
       <div className={checkIsMobile("profile")} data-aos="fade-up" data-aos-anchor-placement="top-center">
         <div className="profile--picbox">
-          <img className="profile--pic" src={profile_pic}></img>
+          <img className={checkIsMobile("profile--pic")} src={profile_pic}></img>
         </div>
         <div className={checkIsMobile("profile--passages")}>
           <p>Several years of experience in programming & project management. Currently working as a developer role on projects ranging from backend to data analytics.</p>

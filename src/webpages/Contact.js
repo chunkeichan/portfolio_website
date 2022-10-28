@@ -11,7 +11,7 @@ function Contact(props) {
   return (
     <div className={checkIsMobile("contact")} data-aos="fade-up" data-aos-anchor-placement="top-center">
     {/* <img className="contact--pic" src={profile_pic}></img> */}
-    <img className="contact--pic" src="https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp"></img>
+    <img className={checkIsMobile("contact--pic")} src="https://chunkeichan.github.io/portfolio_website/images/DSCF9931_adjusted_9.webp"></img>
     
     <div className={checkIsMobile("contact--methodbox")}>
       <div className="contact--method">
