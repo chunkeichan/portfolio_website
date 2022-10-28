@@ -67,8 +67,10 @@ main {
 .mobile--nav--select {
   display: inline-flex;
   width: 100%;
-  gap: 30%;
+  gap: 10%;
   padding: 0% 10%;
+
+  align-items: center;
 
   /* margin-right: 0%;
   margin-left: auto; */
@@ -135,11 +137,13 @@ main {
 
   display: flex;
 
-  height: 50px;
+  height: 80px;
   padding: 0 45px;
   
   align-items: center;
   width: 100%;
+
+  background-color: white;
 }
 
 .mobile--bottomnav{
@@ -148,12 +152,13 @@ main {
 
   display: flex;
 
-  height: 50px;
+  height: 70px;
   padding: 0 45px;
   padding-bottom: 10px;
   
   align-items: center;
   width: 100%;
+  background-color: white;
 }
 
 .profilepage {
