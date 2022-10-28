@@ -12,7 +12,7 @@ function BottomNavbar() {
 
   return (
     <div className="mobile--bottomnav">
-      <div className="nav--select">
+      <div className="mobile--nav--select">
         <div className="nav--buttonbox">
           <img className="mobile--nav--buttonpic" src="./images/profile_icon.svg"></img>
           <button className="mobile--nav--button" id="profile" onClick={handleClick}>Profile</button>
