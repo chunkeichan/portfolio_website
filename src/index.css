@@ -181,8 +181,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  font-size: 100px;
 }
 
 .profile,
@@ -224,7 +222,7 @@ main {
   width: 60%;
   padding-bottom: 15%;
   padding-top: 15%;
-  font-size: 35px;
+  font-size: 42px;
 }
 
 .profile--halfcirclecontainer {
@@ -292,12 +290,12 @@ main {
 
 .profile--achievement--year {
   color: white;
-  font-size: 40px;
+  font-size: 52px;
 }
 
 .profile--achievement--content {
   color: white;
-  font-size: 28px;
+  font-size: 42px;
   padding: 0 15%;
   text-align: left;
 }
@@ -313,8 +311,6 @@ main {
   top: 50px;
   bottom: 0px;
   width: 100%;
-  
-  font-size: 50px;
 }
 
 .mobile--cover {
@@ -328,6 +324,8 @@ main {
   top: 50px;
   bottom: 0px;
   width: 100%;
+  
+  font-size: 75px;
 }
 
 .contact--method {
