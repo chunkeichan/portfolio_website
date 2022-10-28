@@ -172,7 +172,7 @@ main {
   display: flex;
 
   height: 150px;
-  padding: 0 45px;
+  /* padding: 0 45px; */
   padding-bottom: 10px;
   
   align-items: center;
