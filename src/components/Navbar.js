@@ -55,7 +55,7 @@ function Navbar(props) {
 
   const mobile_nav_content = (
     <div className="mobile--nav">
-      <p className="nav--subtitle" id="" onClick={handleClick}>Chan Chun Kei</p>
+      <p className="mobile--nav--subtitle" id="" onClick={handleClick}>Chan Chun Kei</p>
     </div>
   )
 
