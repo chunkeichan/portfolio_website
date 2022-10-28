@@ -12,8 +12,8 @@ function Layout({children, isMobile}) {
   
   return (
     <React.Fragment>
-      {/* <Navbar isMobile={isMobile} />
-      {isMobile ? <main className="mobile--main">{children}</main> : <main>{children}</main>} */}
+      <Navbar isMobile={isMobile} />
+      {isMobile ? <main className="mobile--main">{children}</main> : <main>{children}</main>}
       {isMobile ? <BottomNavbar /> : ""}
     </React.Fragment>
   )
