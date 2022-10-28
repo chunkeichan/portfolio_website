@@ -69,7 +69,7 @@ main {
 }
 
 .mobile--nav--select {
-  display: inline-flex;
+  display: flex;
   width: 100%;
   gap: 10%;
   padding: 0% 10%;
@@ -106,7 +106,7 @@ main {
   background-color: transparent;
   border: 0;
   padding: 0 15px;
-  height: 35px;
+  height: 38px;
   width: auto;
   border-radius: 10px;
 
@@ -115,7 +115,7 @@ main {
   cursor: pointer;
 }
 
-.nav--buttonbox {
+.mobile--nav--buttonbox {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -141,7 +141,7 @@ main {
   background-color: transparent;
   border: 0;
 
-  font-size: 100px;
+  font-size: 70px;
 }
 
 .mobile--nav{
@@ -206,7 +206,9 @@ main {
   border-radius: 50%;
   max-width: 100%;
   /* min-width: 50%; */
-  max-height: 345px;
+
+  max-height: 100%;
+  /* max-height: 345px; */
   aspect-ratio: 1 / 1;
 }
 
@@ -290,7 +292,7 @@ main {
 
 .profile--achievement--year {
   color: white;
-  font-size: 52px;
+  font-size: 72px;
 }
 
 .profile--achievement--content {
@@ -325,13 +327,15 @@ main {
   bottom: 0px;
   width: 100%;
   
-  font-size: 75px;
+  font-size: 50px;
 }
 
 .contact--method {
   display: flex;
   align-items: center;
   gap: 68px;
+
+  font-size: 42px;
 }
 
 .mobile--contact--methodbox {
