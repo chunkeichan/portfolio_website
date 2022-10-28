@@ -31,6 +31,7 @@ main {
   /* padding-top: 50px; */
   /* margin-bottom: 50px; */
   height: 100px;
+  width: 50%;
 }
 
 .nav {
@@ -138,7 +139,7 @@ main {
   padding: 0 45px;
   
   align-items: center;
-  width: 100%;
+  width: 50%;
 }
 
 .mobile--bottomnav{
@@ -151,7 +152,7 @@ main {
   padding: 0 45px;
   
   align-items: center;
-  width: 100%;
+  width: 50%;
 }
 
 .profilepage {
