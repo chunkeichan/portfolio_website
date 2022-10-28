@@ -124,14 +124,14 @@ main {
   cursor: pointer;
 }
 
-.mobile--nav--buttonbox:after {
+/* .mobile--nav--buttonbox:after {
   display: flex;
   flex-flow: column;
   align-items: center;
   gap: 10px;
   cursor: pointer;
   background-color: rgba(176, 176, 176, 0.21);
-}
+} */
 
 .mobile--nav--buttonpic {
   height: 62px;
