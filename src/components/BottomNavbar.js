@@ -2,13 +2,13 @@ import React from "react";
 import { Link, useNavigate, redirect } from "react-router-dom";
 
 function BottomNavbar() {
-  // let navigate = useNavigate();
+  let navigate = useNavigate();
 
-  // function handleClick(props) {
-  //   const prefix_github_page = "/portfolio_website"
-  //   const id = props.target.id
-  //   navigate(`${prefix_github_page}/${id}`)
-  // }
+  function handleClick(props) {
+    const prefix_github_page = "/portfolio_website"
+    const id = props.target.id
+    navigate(`${prefix_github_page}/${id}`)
+  }
 
   const prefix_github_page = "/portfolio_website"
 
