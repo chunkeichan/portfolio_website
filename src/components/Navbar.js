@@ -40,9 +40,18 @@ function Navbar(props) {
     <div className={checkIsMobile("nav")}>
       {isMobile ? "" : <p className="nav--subtitle" id="" onClick={handleClick}>Chan Chun Kei</p>}
       <div className={checkIsMobile("nav--select")}>
-        <button className={checkIsMobile("nav--button")} id="profile" onClick={handleClick}>Profile</button>
-        <button className={checkIsMobile("nav--button")} id="project" onClick={handleClick}>Projects</button>
-        <button className={checkIsMobile("nav--button")} id="contact" onClick={handleClick}>Contact</button>
+        <div className="nav--buttonbox">
+          <img className={isMobile ? "mobile--nav--buttonpic" : ""} src="./images/profile_icon.svg"></img>
+          <button className={checkIsMobile("nav--button")} id="profile" onClick={handleClick}>Profile</button>
+        </div>
+        <div className="nav--buttonbox">
+          <img className={isMobile ? "mobile--nav--buttonpic" : ""} src="./images/project_icon.svg"></img>
+          <button className={checkIsMobile("nav--button")} id="project" onClick={handleClick}>Projects</button>
+        </div>
+        <div className="nav--buttonbox">
+          <img className={isMobile ? "mobile--nav--buttonpic" : ""} src="./images/contact_icon.svg"></img>
+          <button className={checkIsMobile("nav--button")} id="contact" onClick={handleClick}>Contact</button>
+        </div>
       </div>
     </div>
   )

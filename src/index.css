@@ -110,6 +110,17 @@ code {
   cursor: pointer;
 }
 
+.nav--buttonbox {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobile--nav--buttonpic {
+  height: 50px;
+}
+
 .nav--subtitle {
   padding: 0 15px;
 
