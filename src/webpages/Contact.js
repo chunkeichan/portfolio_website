@@ -21,7 +21,7 @@ function Contact(props) {
       </div>
       <br/>
       <br/>
-      <div className="contact--method">
+      <div className={checkIsMobile("contact--method")}>
         {/* <img src="../images/line-md_email-twotone.svg"></img> */}
         <img src="https://chunkeichan.github.io/portfolio_website/images/line-md_email-twotone.svg"></img>
         <p>chunkeichan1901@gmail.com</p>
