@@ -136,12 +136,12 @@ main {
 }
 
 .mobile--nav--subtitle {
-  padding: 0 15px;
+  /* padding: 0 15px; */
 
   background-color: transparent;
   border: 0;
 
-  font-size: 38px;
+  font-size: 100px;
 }
 
 .mobile--nav{
@@ -182,7 +182,7 @@ main {
   flex-direction: column;
   width: 100%;
 
-  font-size: 35px;
+  font-size: 100px;
 }
 
 .profile,
@@ -313,6 +313,8 @@ main {
   top: 50px;
   bottom: 0px;
   width: 100%;
+  
+  font-size: 50px;
 }
 
 .mobile--cover {
