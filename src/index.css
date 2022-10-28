@@ -112,7 +112,7 @@ main {
 
   font-size: 38px;
 
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .mobile--nav--buttonbox {
@@ -120,6 +120,16 @@ main {
   flex-flow: column;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+}
+
+.mobile--nav--buttonbox:focus {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  background-color: rgba(176, 176, 176, 0.21);
 }
 
 .mobile--nav--buttonpic {
