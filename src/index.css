@@ -37,6 +37,9 @@ code {
   box-shadow: 0px 5px 10px rgb(197, 197, 197);
 
   align-items: center;
+
+  width: 100%;
+  /* position: fixed; */
 }
 
 .mobile--nav {
