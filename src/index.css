@@ -21,6 +21,18 @@ code {
     monospace;
 }
 
+main {
+  width: 100%;
+}
+
+.mobile--main {
+  position: absolute;
+  /* top: 0; */
+  /* padding-top: 50px; */
+  /* margin-bottom: 50px; */
+  height: 100px;
+}
+
 .nav {
   /* display: flex;
   flex-direction: row;
@@ -38,26 +50,9 @@ code {
 
   align-items: center;
 
+  position: static;
+  top: 0;
   width: 100%;
-  /* position: fixed; */
-}
-
-.mobile--nav {
-  /* display: flex;
-  flex-direction: row;
-  margin-right: 0; */
-  /* display: inline-flex; */
-  /* flex-direction: row; */
-  display: flex;
-
-  height: 130px;
-  padding: 0 45px;
-  /* width: 1440px; */
-  /* margin: 0; */
-
-  box-shadow: 0px 5px 10px rgb(197, 197, 197);
-
-  align-items: center;
 }
 
 .nav--select {
@@ -131,6 +126,32 @@ code {
   border: 0;
 
   font-size: 13px;
+}
+
+.mobile--nav{
+  position: fixed;
+  top: 0;
+
+  display: flex;
+
+  height: 50px;
+  padding: 0 45px;
+  
+  align-items: center;
+  width: 100%;
+}
+
+.mobile--bottomnav{
+  position: fixed;
+  bottom: 0;
+
+  display: flex;
+
+  height: 50px;
+  padding: 0 45px;
+  
+  align-items: center;
+  width: 100%;
 }
 
 .profilepage {

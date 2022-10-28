@@ -31,30 +31,35 @@ function Navbar(props) {
   let navigate = useNavigate();
 
   function handleClick(props) {
-    const preffix_github_page = "/portfolio_website"
+    const prefix_github_page = "/portfolio_website"
     const id = props.target.id
-    navigate(`${preffix_github_page}/${id}`)
+    navigate(`${prefix_github_page}/${id}`)
   }
 
-  return (
-    <div className={checkIsMobile("nav")}>
-      {isMobile ? "" : <p className="nav--subtitle" id="" onClick={handleClick}>Chan Chun Kei</p>}
-      <div className={checkIsMobile("nav--select")}>
+  const nav_content = (
+    <div className="nav">
+      <p className="nav--subtitle" id="" onClick={handleClick}>Chan Chun Kei</p>
+      <div className="nav--select">
         <div className="nav--buttonbox">
-          <img className={isMobile ? "mobile--nav--buttonpic" : ""} src="./images/profile_icon.svg"></img>
-          <button className={checkIsMobile("nav--button")} id="profile" onClick={handleClick}>Profile</button>
+          <button className="nav--button" id="profile" onClick={handleClick}>Profile</button>
         </div>
         <div className="nav--buttonbox">
-          <img className={isMobile ? "mobile--nav--buttonpic" : ""} src="./images/project_icon.svg"></img>
-          <button className={checkIsMobile("nav--button")} id="project" onClick={handleClick}>Projects</button>
+          <button className="nav--button" id="project" onClick={handleClick}>Projects</button>
         </div>
         <div className="nav--buttonbox">
-          <img className={isMobile ? "mobile--nav--buttonpic" : ""} src="./images/contact_icon.svg"></img>
-          <button className={checkIsMobile("nav--button")} id="contact" onClick={handleClick}>Contact</button>
+          <button className="nav--button" id="contact" onClick={handleClick}>Contact</button>
         </div>
       </div>
     </div>
   )
+
+  const mobile_nav_content = (
+    <div className="mobile--nav">
+      <p className="nav--subtitle" id="" onClick={handleClick}>Chan Chun Kei</p>
+    </div>
+  )
+
+  return isMobile ? mobile_nav_content : nav_content
 }
 
 export default Navbar;

@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./Navbar";
+import BottomNavbar from "./BottomNavbar";
 import styled from "styled-components";
 
 // const Main = styled.main`
@@ -12,7 +13,8 @@ function Layout({children, isMobile}) {
   return (
     <React.Fragment>
       <Navbar isMobile={isMobile} />
-      <main>{children}</main>
+      {isMobile ? <main className="mobile--main">{children}</main> : <main>{children}</main>}
+      {isMobile ? <BottomNavbar /> : ""}
     </React.Fragment>
   )
 }
