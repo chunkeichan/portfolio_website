@@ -199,7 +199,6 @@ main {
   gap: 9%;
   margin: 24% 10% 30% 10%;
   align-items: center;
-  width: 100%;
 }
 
 .profile--pic,
@@ -214,11 +213,11 @@ main {
 }
 
 .profile--picbox {
-  width: 40%;
+  width: 100%;
 }
 
 .profile--passages {
-  width: 60%;
+  width: 100%;
 }
 
 .mobile--profile--passages {
