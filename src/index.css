@@ -32,6 +32,7 @@ main {
   width: 100%;
 
   margin-top: 150px;
+  margin-bottom: 150px;
 
   z-index: 1;
 }
@@ -123,7 +124,7 @@ main {
   cursor: pointer;
 }
 
-.mobile--nav--buttonbox:focus {
+.mobile--nav--buttonbox:after {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -151,7 +152,7 @@ main {
   background-color: transparent;
   border: 0;
 
-  font-size: 42px;
+  font-size: 40px;
 }
 
 .mobile--nav{
