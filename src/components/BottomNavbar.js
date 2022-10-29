@@ -15,7 +15,7 @@ function BottomNavbar() {
   const profile_icon = "./images/profile_icon.svg"
   const project_icon = "./images/project_icon.svg"
   const contact_icon = "./images/contact_icon.svg"
-  
+
   const link_clip = (
     <div className="mobile--bottomnav">
       <div className="mobile--nav--select">
@@ -62,20 +62,20 @@ function BottomNavbar() {
 
   const new_clip = (
     <div className="mobile--bottomnav">
-      <div className="mobile--nav--select">
-        <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/profile`} style={{textDecoration: "none"}}>
-          <img className="mobile--nav--buttonpic" src={profile_icon}></img>
-          <p className="mobile--nav--button">Profile</p>
+      {/* <div className="mobile--nav--select"> */}
+      <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/profile`} style={{textDecoration: "none"}}>
+        <img className="mobile--nav--buttonpic" src={profile_icon}></img>
+        <p className="mobile--nav--button">Profile</p>
+      </Link>
+      <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/project`} style={{textDecoration: "none"}}>
+        <img className="mobile--nav--buttonpic" src={project_icon}></img>
+        <p className="mobile--nav--button">Projects</p>
+      </Link>
+      <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/contact`} style={{textDecoration: "none"}}>
+        <img className="mobile--nav--buttonpic" src={contact_icon}></img>
+        <p className="mobile--nav--button">Contact</p>
         </Link>
-        <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/project`} style={{textDecoration: "none"}}>
-          <img className="mobile--nav--buttonpic" src={project_icon}></img>
-          <p className="mobile--nav--button">Projects</p>
-        </Link>
-        <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/contact`} style={{textDecoration: "none"}}>
-          <img className="mobile--nav--buttonpic" src={contact_icon}></img>
-          <p className="mobile--nav--button">Contact</p>
-        </Link>
-      </div>
+      {/* </div> */}
     </div>
   )
 
