@@ -65,17 +65,15 @@ function BottomNavbar() {
             <p className="mobile--nav--button">Profile</p>
           </div>
         </Link>
-        <Link to={`${prefix_github_page}/project`} style={{textDecoration: "none"}}>
-          <div className="mobile--nav--buttonbox">
+        <div className="mobile--nav--buttonbox">
+          <Link to={`${prefix_github_page}/project`} style={{textDecoration: "none"}}>
             <img className="mobile--nav--buttonpic" src="./images/project_icon.svg"></img>
             <p className="mobile--nav--button">Projects</p>
-          </div>
-        </Link>
-        <Link to={`${prefix_github_page}/contact`} style={{textDecoration: "none"}}>
-          <div className="mobile--nav--buttonbox">
-            <img className="mobile--nav--buttonpic" src="./images/contact_icon.svg"></img>
-            <p className="mobile--nav--button">Contact</p>
-          </div>
+          </Link>
+        </div>
+        <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/contact`} style={{textDecoration: "none"}}>
+          <img className="mobile--nav--buttonpic" src="./images/contact_icon.svg"></img>
+          <p className="mobile--nav--button">Contact</p>
         </Link>
       </div>
     </div>
