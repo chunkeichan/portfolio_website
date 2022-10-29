@@ -112,6 +112,9 @@ main {
   border-radius: 10px;
 
   font-size: 38px;
+  
+  position: fixed;
+  bottom: 5px;
 }
 
 .mobile--nav--buttonbox {
@@ -128,7 +131,7 @@ main {
 .mobile--nav--buttonpic {
   height: 62px;
   position: fixed;
-  bottom: 50px;
+  bottom: 80px;
 }
 
 .nav--subtitle {
@@ -146,7 +149,7 @@ main {
   background-color: transparent;
   border: 0;
 
-  font-size: 40px;
+  font-size: 37px;
 }
 
 .mobile--nav{
