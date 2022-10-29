@@ -100,11 +100,11 @@ main {
 
   font-size: 28px;
   
-  /* position: fixed;
-  bottom: 1px; */
+  position: fixed;
+  bottom: 1px;
 
-  position: relative;
-  bottom: -50px;
+  /* position: relative;
+  bottom: -50px; */
 }
 
 .mobile--nav--buttonbox {
@@ -121,7 +121,7 @@ main {
 .mobile--nav--buttonpic {
   height: 62px;
   position: fixed;
-  bottom: 76px;
+  bottom: 65px;
 }
 
 .nav--subtitle {
@@ -148,7 +148,7 @@ main {
 
   display: flex;
 
-  height: 150px;
+  height: 100px;
   padding: 0 45px;
   box-shadow: 0px 5px 10px rgb(197, 197, 197);
 
@@ -303,7 +303,7 @@ main {
 
 .profile--achievement--content {
   color: white;
-  font-size: 42px;
+  font-size: 40px;
   padding: 0 15%;
   text-align: left;
 }
@@ -322,7 +322,7 @@ main {
 }
 
 .mobile--cover {
-  padding-top: 32%;
+  padding-top: 29%;
   text-align: center;
   /* background-color: black;
   color: white; */
@@ -333,7 +333,7 @@ main {
   bottom: 150px;
   width: 100%;
   
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .contact--method {

@@ -1,7 +1,7 @@
 const achievementDetails = [
   {
     year: "2017",
-    content: ["Cette licence de l'API Faux-texte.comvalable.Cette licence de l'API Faux-texts/plus valable.", "esafgsdfsafw"]
+    content: ["Cette licence de l'API Faux-texte.Cette licence de l'API Faux-texts/plus valable.", "esafgsdfsafw"]
   },
   {
     year: "2018",

@@ -72,7 +72,7 @@ function BottomNavbar() {
         <p className="mobile--nav--button">Projects</p>
       </Link>
       <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/contact`} style={{textDecoration: "none"}}>
-        <img className="mobile--nav--buttonpic" src={contact_icon}></img>
+        <img className="mobile--nav--buttonpic" src={contact_icon} style={{height: "55px"}}></img>
         <p className="mobile--nav--button">Contact</p>
         </Link>
       {/* </div> */}
