@@ -123,12 +123,11 @@ main {
   /* gap: 10px; */
   /* width: 100%; */
   width: 33%;
+  height: 100%;
 }
 
 .mobile--nav--buttonpic {
-  display: flex;
   height: 52px;
-  bottom: 40px;
 }
 
 .nav--subtitle {
