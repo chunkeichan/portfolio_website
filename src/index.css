@@ -114,6 +114,7 @@ main {
   font-size: 38px;
 
   /* cursor: pointer; */
+  display: flex;
 }
 
 .mobile--nav--buttonbox {
