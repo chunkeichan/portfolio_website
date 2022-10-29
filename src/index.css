@@ -114,6 +114,9 @@ main {
   width: 33%;
   height: 150px;
   /* padding: 15px 0; */
+
+  position: fixed;
+  bottom: 0;
 }
 
 .mobile--nav--buttonpic {
