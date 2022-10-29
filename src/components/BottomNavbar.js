@@ -59,7 +59,7 @@ function BottomNavbar() {
   const new_clip = (
     <div className="mobile--bottomnav">
       <div className="mobile--nav--select">
-      <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/profile`} style={{textDecoration: "none"}}>
+        <Link className="mobile--nav--buttonbox" to={`${prefix_github_page}/profile`} style={{textDecoration: "none"}}>
           <img className="mobile--nav--buttonpic" src="./images/profile_icon.svg"></img>
           <p className="mobile--nav--button">Profile</p>
         </Link>
