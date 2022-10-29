@@ -124,10 +124,11 @@ main {
   /* width: 100%; */
   width: 33%;
   height: 100%;
+  padding: 5px 0;
 }
 
 .mobile--nav--buttonpic {
-  height: 52px;
+  height: 62px;
 }
 
 .nav--subtitle {
