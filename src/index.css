@@ -115,8 +115,8 @@ main {
   height: 150px;
   /* padding: 15px 0; */
 
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  bottom: -5px;
 }
 
 .mobile--nav--buttonpic {
