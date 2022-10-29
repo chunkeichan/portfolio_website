@@ -56,7 +56,7 @@ function Project(props) {
           <p className={checkIsMobile("project--title")}>Search:</p>
         </div>
         <div className="project--searchbox">
-          <input className={checkIsMobile("project--searchbar")} type="search" placeholder="Type something here to filter projects ..."></input>
+          <input className={checkIsMobile("project--searchbar")} type="search" placeholder={isMobile ? "Type something here ..." : "Type something here to filter projects ..."}></input>
         </div>
       </div>      
       <br />
