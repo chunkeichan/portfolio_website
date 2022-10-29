@@ -112,9 +112,6 @@ main {
   border-radius: 10px;
 
   font-size: 38px;
-
-  /* cursor: pointer; */
-  display: flex;
 }
 
 .mobile--nav--buttonbox {
@@ -125,7 +122,7 @@ main {
   /* width: 100%; */
   width: 33%;
   height: 150px;
-  padding: 15px 0;
+  /* padding: 15px 0; */
 }
 
 .mobile--nav--buttonpic {
