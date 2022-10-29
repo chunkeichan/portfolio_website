@@ -101,8 +101,11 @@ main {
 
   font-size: 38px;
   
-  position: fixed;
-  bottom: 1px;
+  /* position: fixed;
+  bottom: 1px; */
+
+  position: relative;
+  bottom: -5px;
 }
 
 .mobile--nav--buttonbox {
@@ -114,9 +117,6 @@ main {
   width: 33%;
   height: 150px;
   /* padding: 15px 0; */
-
-  position: relative;
-  bottom: -5px;
 }
 
 .mobile--nav--buttonpic {
