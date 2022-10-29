@@ -126,8 +126,9 @@ main {
 }
 
 .mobile--nav--buttonpic {
+  display: flex;
   height: 52px;
-  bottom: 50px;
+  bottom: 40px;
 }
 
 .nav--subtitle {
