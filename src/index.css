@@ -127,6 +127,7 @@ main {
 
 .mobile--nav--buttonpic {
   height: 52px;
+  bottom: 50px;
 }
 
 .nav--subtitle {
@@ -334,8 +335,8 @@ main {
   color: black;
 
   position: absolute;
-  top: 50px;
-  bottom: 0px;
+  top: 150px;
+  bottom: 150px;
   width: 100%;
   
   font-size: 45px;

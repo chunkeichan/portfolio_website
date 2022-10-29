@@ -12,11 +12,11 @@ const achievementDetails = [
     content: ["A l'API Faux-texte.com n'est pas/plus valable.Cette licence deexte.com n'est pas/plus valable."]
   },
   {
-    year: "2019",
+    year: "2020",
     content: ["A l'API Fauxst pas/plus valable.Cette licence de l'API Faux-texte.com n'est pas/plus valable."]
   },
   {
-    year: "2020",
+    year: "2021",
     content: ["A l'API Faux-texte.com n'est pas/plutte licence de l'API Faux-texte.com n'est pas/plus valable."]
   },
   {
