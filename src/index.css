@@ -303,13 +303,20 @@ main {
 
 .profile--achievement--content {
   color: white;
+  font-size: 28px;
+  padding: 0 15%;
+  text-align: left;
+}
+
+.mobile--profile--achievement--content {
+  color: white;
   font-size: 40px;
   padding: 0 15%;
   text-align: left;
 }
 
 .cover {
-  padding-top: 22%;
+  padding-top: 20%;
   text-align: center;
   /* background-color: black;
   color: white; */
