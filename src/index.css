@@ -114,7 +114,7 @@ main {
   font-size: 38px;
   
   position: fixed;
-  bottom: 5px;
+  bottom: 1px;
 }
 
 .mobile--nav--buttonbox {
@@ -131,7 +131,7 @@ main {
 .mobile--nav--buttonpic {
   height: 62px;
   position: fixed;
-  bottom: 80px;
+  bottom: 76px;
 }
 
 .nav--subtitle {
