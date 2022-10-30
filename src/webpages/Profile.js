@@ -16,7 +16,7 @@ function Profile(props) {
 
     const onLeftSide = (index%2 === 0)
     const achievement_content = achievement.content.map(content => (
-        <p className="profile--achievement--content" data-aos={onLeftSide ? "fade-left" : "fade-right"}>•{content}</p>
+        <p className={checkIsMobile("profile--achievement--content")} data-aos={onLeftSide ? "fade-left" : "fade-right"}>•{content}</p>
     ))
 
     return (
