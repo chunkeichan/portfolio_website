@@ -90,13 +90,7 @@ function Project(props) {
     const toggledItem = isElementToggled.find(item => item.value===element)
     const toggledTrigger = toggledItem===undefined ? false : toggledItem.toggled
     return <button className={checkIsMobile(toggledTrigger ? "project--button--toggled" : "project--button")} onClick={handleSelected} value={element} id="element">{element}</button>
-})
-
-  function selectProject() {
-    console.log("selectProject")
-    // selectedCategory
-    // selectedElement
-  }
+  })
   
   const item_list = projectDetails
   const items_item = item_list.map(item => {
