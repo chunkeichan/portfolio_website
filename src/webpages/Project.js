@@ -14,6 +14,7 @@ function Project(props) {
   const [isCategoryToggled, setIsCategoryToggled] = useState([{value: "All", toggled: true}])
   const [selectedElement, setSelectedElement] = useState(["All"])
   const [isElementToggled, setIsElementToggled] = useState([{value: "All", toggled: true}])
+  const [searchContext, setSearchContext] = useState("")
 
   const handleSelected = (newSelected) => {
     const id = newSelected.target.id
@@ -119,6 +120,15 @@ function Project(props) {
     }
   })
 
+  function searchFunction() {
+    
+  }
+
+  function handleSearchContext(props) {
+    console.log(props.target.value)
+    setSearchContext(props.target.value)
+  }
+
   return (
     <div className={checkIsMobile("project")}>
       {/* <h2>{selectedCategory}</h2>
@@ -145,7 +155,7 @@ function Project(props) {
           <p className={checkIsMobile("project--title")}>Search:</p>
         </div>
         <div className="project--searchbox">
-          <input className={checkIsMobile("project--searchbar")} type="search" placeholder={isMobile ? "Type something here ..." : "Type something here to filter projects ..."}></input>
+          <input className={checkIsMobile("project--searchbar")} type="search" onChange={handleSearchContext} placeholder={isMobile ? "Type something here ..." : "Type something here to filter projects ..."} value={searchContext}></input>
         </div>
       </div>      
       <br />
