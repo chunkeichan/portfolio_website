@@ -18,7 +18,7 @@ import Project from './Project';
 
 function Webpages(props) {
   const isMobile = props.isMobile
-  const preffix_github_page = "/portfolio_website"
+  const preffix_github_page = "" //"/portfolio_website"
 
   useEffect(() => {
     Aos.init({duration: 1500});
