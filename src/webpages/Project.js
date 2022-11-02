@@ -41,15 +41,21 @@ function Project(props) {
 
     if (selectedItem.length===0) {
       setSelected([value])
+      console.log(0)
+
+      console.log(selectedItem)
     } else if (value==="All") {
-      if (selectedItem.includes("All") && selectedItem.length===1) {
-        setSelected([])
-      } else {
-        setSelected(["All"])
-      }
-    } else if (selectedItem.includes("All") && selectedItem.length===1) {
+      console.log(1)
+      console.log(selectedItem)
+      setSelected(["All"])
+    } else if (selectedItem===["All"]) {
+      console.log(2)
+      console.log(selectedItem)
       setSelected([value])
     } else {
+
+      console.log(3)
+      console.log(selectedItem)
       setSelected(preSelected => [...preSelected, value])
     }
 
@@ -59,8 +65,8 @@ function Project(props) {
 
     // -----
     setToggled(preIsToggled => {
-      console.log(preIsToggled)
-      console.log(preIsToggled[0].toggled)    
+      // console.log(preIsToggled)
+      // console.log(preIsToggled[0].toggled)    
       const preIsToggled_values = preIsToggled.map((item) => item.value)
 
       if (preIsToggled_values.includes("All")) {
@@ -99,9 +105,16 @@ function Project(props) {
     // console.log((selectedCategory.filter(selectedItem => item.category.includes(selectedItem))).length!==0)
     // console.log(selectedElement.filter(selectedItem => item.element.includes(selectedItem))!==[])
     if (
+      (
+      (selectedCategory.includes("All") &&
+      (selectedElement.filter(selectedItem => item.element.includes(selectedItem))).length!==0) ||
       ((selectedCategory.filter(selectedItem => item.category.includes(selectedItem)).length!==0) && 
       (selectedElement.filter(selectedItem => item.element.includes(selectedItem))).length!==0) ||
-      selectedElement.includes("All")
+      ((selectedCategory.filter(selectedItem => item.category.includes(selectedItem)).length!==0) &&
+      selectedElement.includes("All")) ||
+      (selectedCategory.includes("All") && selectedElement.includes("All"))
+      ) &&
+      (searchFunction(searchContext))
       ) {
       return (
         <div>
@@ -120,8 +133,12 @@ function Project(props) {
     }
   })
 
-  function searchFunction() {
-    
+  function searchFunction(context) {
+    const content = projectDetails.map(item => Object.values(item))
+    const content_json = JSON.stringify(content)
+    const containContext = content_json.includes(context)
+    console.log(containContext)
+    return containContext
   }
 
   function handleSearchContext(props) {
@@ -131,9 +148,9 @@ function Project(props) {
 
   return (
     <div className={checkIsMobile("project")}>
-      {/* <h2>{selectedCategory}</h2>
+      <h2>{selectedCategory}</h2>
       <h2>{JSON.stringify(isCategoryToggled)}</h2>
-      <h2>{isCategoryToggled.values}</h2> */}
+      <h2>{isCategoryToggled.values}</h2>
       <div className={checkIsMobile("project--category")}>
         <div className="project--titlebox">
           <p className={checkIsMobile("project--title")}>Category:</p>
