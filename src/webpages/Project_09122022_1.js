@@ -1,8 +1,7 @@
 // Use button
 // isToggle format: [{value: "All", toggled: true}]
-import React, { useState } from "react";
+import { React, useState } from "react";
 import projectDetails from "./data/projectDetails";
-import Popup from "reactjs-popup";
 
 function Project(props) {
   const isMobile = props.isMobile
@@ -117,41 +116,14 @@ function Project(props) {
       ) {
       return (
         <div>
-          <Popup
-            trigger={
-              <div className={checkIsMobile("project--item")}>
-                <div className={checkIsMobile("project--item--picbox")}>
-                  <img className={checkIsMobile("project--item--pic")} src={item.image}></img>
-                </div>
-                <div className={checkIsMobile("project--item--description")}>
-                  <h2>{item.title}</h2>
-                  <p>{item.description}</p>
-                  <p>{item.datetime}</p>
-                </div>
-              </div>
-            }
-            position="center center"
-            modal
-            // position="left top"
-            >
-            {close => (
-              <div className="project--popup--bg">
-                <button className="close" onClick={close}>
-                  &times;
-                </button>
-                <div className={checkIsMobile("project--popup")}>
-                  <div className={checkIsMobile("project--item--popup")}>
-                      <img className={checkIsMobile("project--item--pic--popup")} src={item.image}></img>
-                    <div className={checkIsMobile("project--item--description")}>
-                      <h2>{item.title}</h2>
-                      <p>{item.description}</p>
-                      <p>{item.datetime}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-          </Popup>
+          <div className={checkIsMobile("project--item")}>
+            <img className={checkIsMobile("project--item--pic")} src={item.image}></img>
+            <div className={checkIsMobile("project--item--description")}>
+              <h2>{item.title}</h2>
+              <p>{item.description}</p>
+              <p>{item.datetime}</p>
+            </div>
+          </div>
           {/* Jot notes for style={{}} */}
           <hr style={{borderColor: "rgba(209, 209, 209, 0.274)"}} />
         </div>

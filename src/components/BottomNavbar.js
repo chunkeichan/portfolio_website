@@ -5,12 +5,12 @@ function BottomNavbar() {
   let navigate = useNavigate();
 
   function handleClick(props) {
-    const prefix_github_page = "/portfolio_website"
+    const prefix_github_page = "" //"/portfolio_website"
     const id = props.target.id
     navigate(`${prefix_github_page}/${id}`)
   }
 
-  const prefix_github_page = "/portfolio_website"
+  const prefix_github_page = "" //"/portfolio_website"
 
   const profile_icon = "./images/profile_icon.svg"
   const project_icon = "./images/project_icon.svg"

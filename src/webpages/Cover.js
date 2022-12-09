@@ -6,7 +6,7 @@ function Cover(props) {
   function checkIsMobile(class_name) {
     return isMobile ? `mobile--${class_name}` : `${class_name}`
   }
-  const prefix_github_page = "/portfolio_website"
+  const prefix_github_page = "" //"/portfolio_website"
 
   return (
     // Review textDecoration
