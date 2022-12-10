@@ -159,8 +159,8 @@ function Project(props) {
   function searchFunction(context) {
     const content = projectDetails.map(item => Object.values(item))
     const content_json = JSON.stringify(content)
-    console.log(content_json)
-    const containContext = content_json.includes(context)
+    const content_json_lowercase = content_json.toLowerCase()
+    const containContext = content_json_lowercase.includes(context.toLowerCase())
     console.log(containContext)
     return containContext
   }
@@ -174,7 +174,6 @@ function Project(props) {
     <div className={checkIsMobile("project")}>
       {/* <h2>selectedCategory: {selectedCategory}</h2> */}
       {/* <h2>isCategoryToggled: {JSON.stringify(isCategoryToggled)}</h2> */}
-      <p>23</p>
       <div className={checkIsMobile("project--category")}>
         <div className="project--titlebox">
           <p className={checkIsMobile("project--title")}>Category:</p>
@@ -199,6 +198,7 @@ function Project(props) {
           <input className={checkIsMobile("project--searchbar")} type="search" onChange={handleSearchContext} placeholder={isMobile ? "Type something here ..." : "Type something here to filter projects ..."} value={searchContext}></input>
         </div>
       </div>      
+      <br />
       <br />
       {items_item}
     </div>

@@ -6,6 +6,7 @@ import Contact from './webpages/Contact';
 import Project from './webpages/Project';
 import Webpages from './webpages';
 import { BrowserView, MobileView, isMobile } from 'react-device-detect';
+import { Helmet } from 'react-helmet';
 
 function App() {
   const [windowDimension, setWindowDimension] = useState(window.innerWidth)
@@ -23,6 +24,9 @@ function App() {
 
   return (
     <div>
+      {/* <Helmet>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"></meta>
+      </Helmet> */}
       <MobileView><Webpages isMobile={true} /></MobileView>
       <BrowserView><Webpages isMobile={false} /></BrowserView>
     </div>
