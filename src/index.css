@@ -24,15 +24,15 @@ code {
 main {
   /* width: 100%; */
   z-index: 1;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .mobile--main {
   position: absolute;
   width: 100%;
 
-  margin-top: 100px;
-  margin-bottom: 150px;
+  margin-top: 50px;
+  margin-bottom: 75px;
 
   z-index: 1;
 }
@@ -67,7 +67,7 @@ main {
 
   display: flex;
 
-  height: 100px;
+  height: 50px;
   padding: 0 45px;
   box-shadow: 0px 5px 10px rgb(197, 197, 197);
 
@@ -113,13 +113,15 @@ main {
   background-color: transparent;
   border: 0;
   padding: 0 15px;
-  height: 28px;
+  height: 14px;
   width: auto;
 
-  font-size: 28px;
+  font-size: 13px;
+  /* font-size: 28px; */
   
   position: fixed;
-  bottom: 1px;
+  bottom: 0;
+  /* bottom: 1px; */
 
   /* position: relative;
   bottom: -50px; */
@@ -132,14 +134,14 @@ main {
   /* gap: 10px; */
   /* width: 100%; */
   width: 33%;
-  height: 150px;
+  height: 72px;
   /* padding: 15px 0; */
 }
 
 .mobile--nav--buttonpic {
-  height: 62px;
+  height: 32px;
   position: fixed;
-  bottom: 65px;
+  bottom: 28px;
 }
 
 .nav--subtitle {
@@ -157,7 +159,8 @@ main {
   background-color: transparent;
   border: 0;
 
-  font-size: 37px;
+  font-size: 20px;
+  /* font-size: 37px; */
 }
 
 .mobile--bottomnav{
@@ -166,7 +169,7 @@ main {
 
   display: flex;
 
-  height: 150px;
+  height: 75px;
   /* padding: 0 45px; */
   /* padding-bottom: 10px; */
   
@@ -196,7 +199,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 6%;
-  margin: 22% 0% 30% 0%;
+  margin: 12% 0% 30% 0%;
   align-items: center;
 }
 
@@ -214,12 +217,14 @@ main {
 .mobile--profile--pic,
 .mobile--contact--pic {
   border-radius: 50%;
-  max-width: 100%;
+  max-width: 70%;
   /* min-width: 50%; */
 
   /* max-height: 100%; */
   max-height: 545px;
   aspect-ratio: 1 / 1;
+
+  /* padding: 10px 10px; */
 }
 
 .profile--passages {
@@ -230,7 +235,8 @@ main {
   width: 60%;
   padding-bottom: 15%;
   padding-top: 15%;
-  font-size: 42px;
+  font-size: 18px;
+  /* font-size: 42px; */
 }
 
 .profile--halfcirclecontainer {
@@ -298,7 +304,7 @@ main {
 
 .profile--achievement--year {
   color: white;
-  font-size: 72px;
+  font-size: 60px;
 }
 
 .profile--achievement--content {
@@ -310,7 +316,8 @@ main {
 
 .mobile--profile--achievement--content {
   color: white;
-  font-size: 40px;
+  font-size: 20px;
+  /* font-size: 40px; */
   padding: 0 15%;
   text-align: left;
 }
@@ -336,25 +343,27 @@ main {
   color: black;
 
   position: absolute;
-  top: 150px;
-  bottom: 150px;
+  top: 30px;
+  bottom: 75px;
   width: 100%;
   
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .contact--method {
   display: flex;
   align-items: center;
-  gap: 68px;
+  /* gap: 68px; */
+  gap: 5%;
 }
 
 .mobile--contact--method {
   display: flex;
   align-items: center;
-  gap: 68px;
+  gap: 3%;
 
-  font-size: 42px;
+  font-size: 17px;
+  /* font-size: 42px; */
 }
 
 .mobile--contact--methodbox {
@@ -367,7 +376,7 @@ main {
 }
 
 .mobile--project {
-  padding: 100px 0 150px 0;
+  padding: 5px 10px 80px 10px;
 }
 
 .project--category,
@@ -387,42 +396,76 @@ main {
   display: flex;
   align-items: center;
 
-  padding: 14px 0;
+  padding: 9px 5px;
 
-  gap: 45px;
-  margin: 0 9%;
+  gap: 2%;
+  /* gap: 45px; */
+  margin: 0 2%;
 }
 
 .project--item {
   display: flex;
-  gap: 88px;
-  height: 350px;
-}
-
-.project--item--popup {
-  display: flex;
-  gap: 88px;
-  /* height: 350px; */
-}
-
-.mobile--project--item--popup {
-  display: flex;
-  gap: 88px;
-  /* height: 350px; */
+  gap: 10%;
+  /* gap: 88px; */
+  height:350px;
 }
 
 .mobile--project--item {
   display: flex;
-  gap: 88px;
-  font-size: 36px;
+  gap: 2%;
+  /* gap: 88px; */
+  font-size: 15px;
+  /* font-size: 36px; */
   
   /* width: 100%; */
-  padding: 0 15px;
+  padding: 3px 3px;
+
+  height: 220px;
+}
+
+.project--item--popup {
+  display: flex;
+  gap: 5%;
+  /* gap: 88px; */
+  /* height: 350px; */
+
+  background-color: white;
+  /* width: 100%; */
+  /* width: 1700px; */
+  padding: 25px 25px;
+  border-radius: 20px;
+  height: 70%;
+  margin: 10% 10%;
+  align-self: center;
+}
+
+.mobile--project--item--popup {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  width: 100%;
+  /* height: 350px; */
+
+  background-color: white;
+  padding: 15px 15px;
+  /* padding: 10px 25px; */
+  border-radius: 20px;
+  height: 80%;
+  width: 100%;
+  /* margin: 0 2%; */
+  /* margin-top: 10px; */
+  align-self: center;
 }
 
 .project--item--picbox {
   width: 50%;
   height: 100%;
+}
+
+.mobile--project--item--picbox {
+  width: 40%;
+  height: 90%;
+  padding: 5% 0;
 }
 
 .project--item--pic {
@@ -445,27 +488,40 @@ main {
 }
 
 .mobile--project--item--pic--popup {
-  width: 50%;
+  width: 100%;
   object-fit: contain;
   /* object-fit: cover; */
 }
 
 .mobile--project--item--pic--popup:hover {
-  width: 50%;
+  width: 100%;
   /* object-fit: contain; */
   object-fit: cover;
 }
 
 .mobile--project--item--pic {
-  width: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .project--item--description {
-  width: 50%;
+  width: 100%;
+}
+
+.project--item--description--popup {
+  width: 100%;
 }
 
 .mobile--project--item--description {
+  width: 60%;
+  padding-right: 5px;
+}
+
+.mobile--project--item--description--popup {
   width: 100%;
+  padding-right: 5px;
 }
 
 .project--title {
@@ -479,7 +535,8 @@ main {
 
   width: 100%;
 
-  font-size: 40px;
+  font-size: 17px;
+  /* font-size: 40px; */
 }
 
 .project--titlebox {
@@ -493,7 +550,7 @@ main {
 .project--searchbox {
   display: flex;
 
-  width: 100%;
+  width: 400px;
 }
 
 .project--searchbar {
@@ -518,12 +575,13 @@ main {
   /* To allow the search bar extend automatically, set width: 100% for both .project--searchbox and .project--searchbar */
   width: 100%;
 
-  height: 60px;
+  height: 30px;
   border-radius: 15px;
   border-color: rgba(209, 209, 209, 0.274);
   padding: 0 15px 0 40px;
 
-  font-size: 30px;
+  font-size: 12px;
+  /* font-size: 30px; */
 }
 
 .project--buttonbox {
@@ -546,9 +604,10 @@ main {
   background-color: rgba(209, 209, 209, 0.274);
   border-radius: 14px;
   border: 0;
-  height: 65px;
+  height: 35px;
   padding: 5px 16px;
-  font-size: 40px;
+  font-size: 13px;
+  /* font-size: 40px; */
 }
 
 .project--button--toggled {
@@ -563,9 +622,10 @@ main {
   background-color: rgba(209, 209, 209, 0.874);
   border-radius: 14px;
   border: 0;
-  height: 65px;
+  height: 35px;
   padding: 5px 16px;
-  font-size: 40px;
+  font-size: 12px;
+  /* font-size: 40px; */
 }
 
 .project--button:hover {
@@ -574,28 +634,6 @@ main {
   border: 0;
   height: 30px;
   padding: 0 15px;
-}
-
-.project--popup {
-  background-color: white;
-  /* width: 100%; */
-  /* width: 1700px; */
-  padding: 25px 50px;
-  border-radius: 20px;
-  height: 70%;
-  margin: 0 10%;
-  align-self: center;
-  display: flex;
-}
-
-.mobile--project--popup {
-  background-color: white;
-  padding: 25px 50px;
-  border-radius: 20px;
-  height: 70%;
-  margin: 0 10%;
-  align-self: center;
-  display: flex;
 }
 
 .project--popup--bg {
@@ -619,6 +657,23 @@ main {
   top: 135px; */
   right: 14%;
   top: 14%;
+  font-size: 36px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+.project--popup--bg > .mobile--close {
+  cursor: pointer;
+  /* position: relative; */
+  position: absolute;
+  display: block;
+  padding: 5px 5px;
+  line-height: 20px;
+  /* right: 175px;
+  top: 135px; */
+  right: 9%;
+  top: 6%;
   font-size: 36px;
   background: #ffffff;
   border-radius: 18px;

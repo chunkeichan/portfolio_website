@@ -125,7 +125,7 @@ function Project(props) {
                 </div>
                 <div className={checkIsMobile("project--item--description")}>
                   <h2>{item.title}</h2>
-                  <p>{item.description}</p>
+                  <p>{isMobile ? "" : item.description}</p>
                   <p>{item.datetime}</p>
                 </div>
               </div>
@@ -135,17 +135,15 @@ function Project(props) {
             >
             {close => (
               <div className="project--popup--bg" onClick={close}>
-                <button className="close" onClick={close}>
+                <button className={checkIsMobile("close")} onClick={close}>
                   &times;
                 </button>
-                <div className={checkIsMobile("project--popup")}>
-                  <div className={checkIsMobile("project--item--popup")}>
-                      <img className={checkIsMobile("project--item--pic--popup")} src={item.image}></img>
-                    <div className={checkIsMobile("project--item--description")}>
-                      <h2>{item.title}</h2>
-                      <p>{item.description}</p>
-                      <p>{item.datetime}</p>
-                    </div>
+                <div className={checkIsMobile("project--item--popup")}>
+                  <img className={checkIsMobile("project--item--pic--popup")} src={item.image}></img>
+                  <div className={checkIsMobile("project--item--description--popup")}>
+                    <h2>{item.title}</h2>
+                    <p>{item.description}</p>
+                    <p>{item.datetime}</p>
                   </div>
                 </div>
               </div>
@@ -161,6 +159,7 @@ function Project(props) {
   function searchFunction(context) {
     const content = projectDetails.map(item => Object.values(item))
     const content_json = JSON.stringify(content)
+    console.log(content_json)
     const containContext = content_json.includes(context)
     console.log(containContext)
     return containContext
@@ -175,6 +174,7 @@ function Project(props) {
     <div className={checkIsMobile("project")}>
       {/* <h2>selectedCategory: {selectedCategory}</h2> */}
       {/* <h2>isCategoryToggled: {JSON.stringify(isCategoryToggled)}</h2> */}
+      <p>23</p>
       <div className={checkIsMobile("project--category")}>
         <div className="project--titlebox">
           <p className={checkIsMobile("project--title")}>Category:</p>
