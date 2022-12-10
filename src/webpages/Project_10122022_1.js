@@ -48,7 +48,7 @@ function Project(props) {
       console.log(1)
       console.log(selectedItem)
       setSelected(["All"])
-    } else if (selectedItem.includes("All")) {
+    } else if (selectedItem===["All"]) {
       console.log(2)
       console.log(selectedItem)
       setSelected([value])
@@ -134,7 +134,7 @@ function Project(props) {
             modal
             >
             {close => (
-              <div className="project--popup--bg" onClick={close}>
+              <div className="project--popup--bg">
                 <button className="close" onClick={close}>
                   &times;
                 </button>
@@ -173,8 +173,9 @@ function Project(props) {
 
   return (
     <div className={checkIsMobile("project")}>
-      {/* <h2>selectedCategory: {selectedCategory}</h2> */}
-      {/* <h2>isCategoryToggled: {JSON.stringify(isCategoryToggled)}</h2> */}
+      <h2>{selectedCategory}</h2>
+      <h2>{JSON.stringify(isCategoryToggled)}</h2>
+      <h2>{isCategoryToggled.values}</h2>
       <div className={checkIsMobile("project--category")}>
         <div className="project--titlebox">
           <p className={checkIsMobile("project--title")}>Category:</p>

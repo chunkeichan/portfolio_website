@@ -405,6 +405,12 @@ main {
   /* height: 350px; */
 }
 
+.mobile--project--item--popup {
+  display: flex;
+  gap: 88px;
+  /* height: 350px; */
+}
+
 .mobile--project--item {
   display: flex;
   gap: 88px;
@@ -430,6 +436,24 @@ main {
   width: 50%;
   object-fit: contain;
   /* object-fit: cover; */
+}
+
+.project--item--pic--popup:hover {
+  width: 50%;
+  /* object-fit: contain; */
+  object-fit: cover;
+}
+
+.mobile--project--item--pic--popup {
+  width: 50%;
+  object-fit: contain;
+  /* object-fit: cover; */
+}
+
+.mobile--project--item--pic--popup:hover {
+  width: 50%;
+  /* object-fit: contain; */
+  object-fit: cover;
 }
 
 .mobile--project--item--pic {
@@ -554,15 +578,24 @@ main {
 
 .project--popup {
   background-color: white;
-  /* width: 80%; */
-  width: 1700px;
+  /* width: 100%; */
+  /* width: 1700px; */
   padding: 25px 50px;
   border-radius: 20px;
   height: 70%;
   margin: 0 10%;
   align-self: center;
   display: flex;
+}
 
+.mobile--project--popup {
+  background-color: white;
+  padding: 25px 50px;
+  border-radius: 20px;
+  height: 70%;
+  margin: 0 10%;
+  align-self: center;
+  display: flex;
 }
 
 .project--popup--bg {
@@ -577,12 +610,15 @@ main {
 
 .project--popup--bg > .close {
   cursor: pointer;
+  /* position: relative; */
   position: absolute;
   display: block;
   padding: 5px 5px;
   line-height: 20px;
-  right: 175px;
-  top: 135px;
+  /* right: 175px;
+  top: 135px; */
+  right: 14%;
+  top: 14%;
   font-size: 36px;
   background: #ffffff;
   border-radius: 18px;
