@@ -35,7 +35,7 @@ const achievementDetails = [
               "Solar Panel Bus - Design, Implementation and Testing at Transport Department Centre;",
               "Solar Panel Bus - Data Pipeline, Analysis and Reports;",
               "BYD 150kW DC charger temporary installation;",
-              "Bus Outswing Detectoin System Trial."
+              "Bus Outswing Detection System Trial."
              ]
   },
   {
