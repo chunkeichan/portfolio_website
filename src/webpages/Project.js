@@ -184,7 +184,7 @@ function Project(props) {
       </div>
       <div className={checkIsMobile("project--elements")}>
         <div className="project--titlebox">
-          <p className={checkIsMobile("project--title")}>Element(s):</p>
+          <p className={checkIsMobile("project--title")}>Element:</p>
         </div>
         <div className="project--buttonbox">
           {items_element}

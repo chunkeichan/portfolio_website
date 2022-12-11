@@ -25,7 +25,7 @@ function Profile(props) {
         <div style={{width: "50%", textAlign: "center"}}>
           {onLeftSide ? achievement_year : achievement_content}
         </div>
-        <div className="profile--achievement--line" style={{alignSelf: "center"}}></div>
+        <div className={checkIsMobile("profile--achievement--line")} style={{alignSelf: "center"}}></div>
         <div style={{width: "50%", textAlign: "center"}}>
           {onLeftSide ? achievement_content : achievement_year}
         </div>
@@ -52,7 +52,7 @@ function Profile(props) {
       <div className="profile--halfcirclecontainer">
         <div className="profile--halfcircle"></div>
       </div>
-      <div className="profile--achievement">
+      <div className={checkIsMobile("profile--achievement")}>
         {/* Can use alignSelf to align different elements in different positions(e.g. center/stretch) when needed. */}
         {/* No need to use alignItems in the parent div anymore. */}
         <div className="profile--achievement--halfcircle" style={{alignSelf: "center"}}></div>
