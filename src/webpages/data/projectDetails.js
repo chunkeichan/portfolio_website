@@ -33,7 +33,15 @@ const projectDetails = [
   },
   {
   image: "https://www.gizmobolt.com/wp-content/uploads/2019/05/API-Platforms-768x500.png",
-  title: "Integrated API Service",
+  title: "Centralized Data Platform and API Service",
+  description: "Designed the architecture of an API with OAuth2.0 Client Credential Flow and developed the API using Azure Active Directory, Node.js and Express",
+  datetime: "Feb 2019",
+  category: ["Backend"],
+  element: ["Azure", "javascript", "SQL"]
+  },
+  {
+  image: "https://www.thebigredguide.com/img/white-papers/1240/planradar-cover.gif",
+  title: "Integrated Safety Platform",
   description: "Designed the architecture of an API with OAuth2.0 Client Credential Flow and developed the API using Azure Active Directory, Node.js and Express",
   datetime: "Feb 2019",
   category: ["Backend"],
@@ -88,7 +96,7 @@ const projectDetails = [
   element: ["Python"]
   },
   {
-  image: "https://www.youth.gov.hk/html/www/en/images/startup/cover-photo/HKUSIEC_900.jpg",
+  image: "https://www.shell.com.my/motorists/shell-fuels/shell-fuelsave-diesel/_jcr_content/par/textimage_1952968396/image.img.960.jpeg",
   title: "Bus Diesel Consumption Analysis",
   description: "...",
   datetime: "Feb 2019",
@@ -96,7 +104,7 @@ const projectDetails = [
   element: ["Python"]
   },
   {
-  image: "https://www.youth.gov.hk/html/www/en/images/startup/cover-photo/HKUSIEC_900.jpg",
+  image: "https://sharon-drew.com/wp-content/uploads/2015/04/training.jpg",
   title: "Training Sessions to Mechanics and Electricians",
   description: "...",
   datetime: "Feb 2019",
@@ -112,7 +120,7 @@ const projectDetails = [
   element: ["Python"]
   },
   {
-  image: "https://www.youth.gov.hk/html/www/en/images/startup/cover-photo/HKUSIEC_900.jpg",
+  image: "https://thecodeprogram.com/img/contents/2019/11/automotive-canbus-diagram---thecodeprogram.jpg",
   title: "CANbus data analysis trial",
   description: "...",
   datetime: "Feb 2019",
@@ -120,7 +128,7 @@ const projectDetails = [
   element: ["Python"]
   },
   {
-  image: "https://www.youth.gov.hk/html/www/en/images/startup/cover-photo/HKUSIEC_900.jpg",
+  image: "https://community.victronenergy.com/storage/attachments/5243-img-0812.png",
   title: "Solar Panel Bus - Data Pipeline, Analysis and Reports",
   description: "...",
   datetime: "Feb 2019",
@@ -128,7 +136,7 @@ const projectDetails = [
   element: ["Python"]
   },
   {
-  image: "https://www.youth.gov.hk/html/www/en/images/startup/cover-photo/HKUSIEC_900.jpg",
+  image: "https://rextekev.com/wp-content/uploads/2020/11/bh.png",
   title: "BYD 150kW DC charger temporary installation",
   description: "...",
   datetime: "Feb 2019",
@@ -144,15 +152,7 @@ const projectDetails = [
   element: ["Python"]
   },
   {
-  image: "https://www.youth.gov.hk/html/www/en/images/startup/cover-photo/HKUSIEC_900.jpg",
-  title: "Centralized Data Platform and API Service",
-  description: "...",
-  datetime: "Feb 2019",
-  category: ["Data"],
-  element: ["Python"]
-  },
-  {
-  image: "https://www.youth.gov.hk/html/www/en/images/startup/cover-photo/HKUSIEC_900.jpg",
+  image: "https://psiborg.in/wp-content/uploads/2020/04/iot-dashboard-and-platform-com.jpg",
   title: "FallGuard - Opening Detection System",
   description: "...",
   datetime: "Feb 2019",
