@@ -205,7 +205,7 @@ function Project(props) {
       <br />
       <br />
       {items_item}
-      <img className="scrollUpButton" src="./images/button_slideUp_black.png" onClick={scrollUp} />
+      <img className={checkIsMobile("scrollUpButton")} src="./images/button_slideUp_black.png" onClick={scrollUp} />
     </div>
   )
 }

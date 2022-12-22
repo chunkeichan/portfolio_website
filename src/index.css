@@ -703,9 +703,9 @@ main {
   position: fixed;
   right: 5%;
   bottom: 5%;
+  height: 100px;
   z-index: 3;
 }
-
 
 .scrollUpButton:hover {
   position: fixed;
@@ -713,5 +713,22 @@ main {
   bottom: 5.5%;
   z-index: 3;
   height: 90px;
+  width: auto;
+}
+
+.mobile--scrollUpButton {
+  position: fixed;
+  right: 7%;
+  bottom: 13%;
+  height: 55px;
+  z-index: 3;
+}
+
+.mobile--scrollUpButton:hover {
+  position: fixed;
+  right: 8%;
+  bottom: 13.5%;
+  z-index: 3;
+  height: 50px;
   width: auto;
 }

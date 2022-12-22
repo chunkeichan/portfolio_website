@@ -66,7 +66,7 @@ function Profile(props) {
         <div className="profile--achievement--midline" style={{alignSelf: "center"}}></div>
         <div className="profile--achievement--endline" style={{alignSelf: "center"}}></div>
       </div>
-      <img className="scrollUpButton" src="./images/button_slideUp_white.png" onClick={scrollUp} />
+      <img className={checkIsMobile("scrollUpButton")} src="./images/button_slideUp_white.png" onClick={scrollUp} />
     </div>
   )
 }
