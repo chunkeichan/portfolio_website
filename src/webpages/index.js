@@ -15,6 +15,7 @@ import Profile from './Profile';
 import Cover from './Cover';
 import Contact from './Contact';
 import Project from './Project';
+import ScrollToTop from '../components/ScrollToTop'
 
 function Webpages(props) {
   const isMobile = props.isMobile
@@ -27,6 +28,7 @@ function Webpages(props) {
   return (
     <Router>
       <Layout isMobile={isMobile}>
+        <ScrollToTop />
         <Routes>
           <Route exact path={`${preffix_github_page}/`} element={<Cover isMobile={isMobile} />} />
           <Route path={`${preffix_github_page}/profile`} element={<Profile isMobile={isMobile} />} />

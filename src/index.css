@@ -24,7 +24,8 @@ code {
 main {
   /* width: 100%; */
   z-index: 1;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  margin-top: 45px;
 }
 
 .mobile--main {
@@ -696,4 +697,21 @@ main {
   background: #ffffff;
   border-radius: 18px;
   border: 1px solid #cfcece;
+}
+
+.scrollUpButton {
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  z-index: 3;
+}
+
+
+.scrollUpButton:hover {
+  position: fixed;
+  right: 5.375%;
+  bottom: 5.5%;
+  z-index: 3;
+  height: 90px;
+  width: auto;
 }

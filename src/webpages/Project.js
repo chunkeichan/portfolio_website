@@ -170,6 +170,10 @@ function Project(props) {
     setSearchContext(props.target.value)
   }
 
+  function scrollUp(){ 
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className={checkIsMobile("project")}>
       {/* <h2>selectedCategory: {selectedCategory}</h2> */}
@@ -201,6 +205,7 @@ function Project(props) {
       <br />
       <br />
       {items_item}
+      <img className="scrollUpButton" src="./images/button_slideUp_black.png" onClick={scrollUp} />
     </div>
   )
 }

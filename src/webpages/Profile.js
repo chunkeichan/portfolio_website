@@ -34,6 +34,10 @@ function Profile(props) {
     )
   })
 
+  function scrollUp(){ 
+    window.scrollTo(0, 0);
+  }
+
   return (
     <div className="profilepage">
       <div className={checkIsMobile("profile")} data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -62,8 +66,11 @@ function Profile(props) {
         <div className="profile--achievement--midline" style={{alignSelf: "center"}}></div>
         <div className="profile--achievement--endline" style={{alignSelf: "center"}}></div>
       </div>
+      <img className="scrollUpButton" src="./images/button_slideUp_white.png" onClick={scrollUp} />
     </div>
   )
 }
 
 export default Profile
+
+
